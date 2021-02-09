@@ -20,7 +20,7 @@ export class ProductsDetailComponent implements OnInit {
     ) {}
   
     ngOnInit(): void {
-      this.cargarVendor();
+      this.cargarProducts();
     }
     create(): void {
       //  crea el cliente, luego le redirije
@@ -44,7 +44,7 @@ export class ProductsDetailComponent implements OnInit {
         );
       });
     }
-    cargarVendor(): void {
+    cargarProducts(): void {
       this.activatedRoute.params.subscribe((params) => {
         const id = params.id;
         if (id) {

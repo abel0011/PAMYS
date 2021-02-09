@@ -15,6 +15,8 @@ import { PaymentListComponent } from './subpages/payment-type/payment-list/payme
 import { PaymentDetailComponent } from './subpages/payment-type/payment-detail/payment-detail.component';
 import { ProductsListComponent } from './subpages/products/products-list/products-list.component';
 import { ProductsDetailComponent } from './subpages/products/products-detail/products-detail.component';
+import {ProducstImageListComponent  } from './subpages/products-image/producst-image-list/producst-image-list.component';
+import {ProducstImageDetailComponent  } from './subpages/products-image/producst-image-detail/producst-image-detail.component';
 
 const routes: Routes = [
   {
@@ -91,6 +93,19 @@ const routes: Routes = [
         path: 'products-new/form/:id',
         component: ProductsDetailComponent,
       },
+{
+        path: 'products-image',
+        component: ProducstImageListComponent,
+      },
+      {
+        path: 'products-image/form',
+        component:ProducstImageDetailComponent ,
+      },
+
+      {
+        path: 'products-image/form/:id',
+        component: ProducstImageDetailComponent,
+      }
     ],
   },
 ];

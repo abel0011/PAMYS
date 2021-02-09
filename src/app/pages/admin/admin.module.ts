@@ -21,6 +21,10 @@ import { PaymentListComponent } from './subpages/payment-type/payment-list/payme
 import { PaymentDetailComponent } from './subpages/payment-type/payment-detail/payment-detail.component'
 import {ProductsListComponent } from './subpages/products/products-list/products-list.component'
 import {ProductsDetailComponent} from './subpages/products/products-detail/products-detail.component';
+import {ProducstImageListComponent  } from './subpages/products-image/producst-image-list/producst-image-list.component';
+import {ProducstImageDetailComponent  } from './subpages/products-image/producst-image-detail/producst-image-detail.component';
+
+
 @NgModule({
   declarations: [
     NavComponent,
@@ -37,7 +41,9 @@ import {ProductsDetailComponent} from './subpages/products/products-detail/produ
     PaymentListComponent,
     PaymentDetailComponent,
     ProductsListComponent,
-    ProductsDetailComponent
+    ProductsDetailComponent,
+    ProducstImageListComponent,
+    ProducstImageDetailComponent
   ],
   imports: [
     CommonModule,
