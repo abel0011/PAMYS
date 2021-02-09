@@ -13,6 +13,8 @@ import { ClientListComponent } from './subpages/client/client-list/client-list.c
 import { ClientDetailComponent } from './subpages/client/client-detail/client-detail.component';
 import { PaymentListComponent } from './subpages/payment-type/payment-list/payment-list.component';
 import { PaymentDetailComponent } from './subpages/payment-type/payment-detail/payment-detail.component';
+import { ProductsListComponent } from './subpages/products/products-list/products-list.component';
+import { ProductsDetailComponent } from './subpages/products/products-detail/products-detail.component';
 
 const routes: Routes = [
   {
@@ -75,6 +77,19 @@ const routes: Routes = [
       {
         path: 'payment-types/form/:id',
         component: PaymentDetailComponent,
+      },
+      {
+        path: 'products-new',
+        component: ProductsListComponent,
+      },
+      {
+        path: 'products-new/form',
+        component:ProductsDetailComponent ,
+      },
+
+      {
+        path: 'products-new/form/:id',
+        component: ProductsDetailComponent,
       },
     ],
   },

@@ -18,8 +18,9 @@ import { VendorDetailComponent } from './subpages/vendor/vendor-detail/vendor-de
 import { ClientListComponent } from './subpages/client/client-list/client-list.component';
 import { ClientDetailComponent } from './subpages/client/client-detail/client-detail.component';
 import { PaymentListComponent } from './subpages/payment-type/payment-list/payment-list.component';
-import { PaymentDetailComponent } from './subpages/payment-type/payment-detail/payment-detail.component';
-
+import { PaymentDetailComponent } from './subpages/payment-type/payment-detail/payment-detail.component'
+import {ProductsListComponent } from './subpages/products/products-list/products-list.component'
+import {ProductsDetailComponent} from './subpages/products/products-detail/products-detail.component';
 @NgModule({
   declarations: [
     NavComponent,
@@ -34,7 +35,9 @@ import { PaymentDetailComponent } from './subpages/payment-type/payment-detail/p
     ClientListComponent,
     ClientDetailComponent,
     PaymentListComponent,
-    PaymentDetailComponent
+    PaymentDetailComponent,
+    ProductsListComponent,
+    ProductsDetailComponent
   ],
   imports: [
     CommonModule,
